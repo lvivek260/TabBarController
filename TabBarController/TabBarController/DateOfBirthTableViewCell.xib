@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="birthdayCell" rowHeight="264" id="KGk-i7-Jjw" customClass="DateOfBirthTableViewCell" customModule="TabBarController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="264"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="486" height="264"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMb-Ei-D7n">
+                        <rect key="frame" x="15" y="14.666666666666664" width="50" height="49.999999999999993"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="AKP-Ou-vwC"/>
+                            <constraint firstAttribute="height" constant="50" id="WP0-eS-vE2"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <imageReference key="image" image="arrowshape.right.fill" catalog="system" symbolScale="large"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="semibold">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                            </preferredSymbolConfiguration>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0S-02-eqy">
+                        <rect key="frame" x="75" y="28" width="80" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="l6E-cc-ce2"/>
+                            <constraint firstAttribute="width" constant="80" id="pTS-LM-yw5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02/04/2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hg-rh-04s">
+                        <rect key="frame" x="175" y="28" width="291" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="NiK-gr-uIW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <datePicker contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="ern-2j-KZp">
+                        <rect key="frame" x="20" y="63" width="446" height="191"/>
+                        <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                            <!--1970-01-01 11:00:00 +0000-->
+                        </date>
+                        <date key="maximumDate" timeIntervalSinceReferenceDate="315486000">
+                            <!--2010-12-31 11:00:00 +0000-->
+                        </date>
+                        <locale key="locale" localeIdentifier="en_IN"/>
+                    </datePicker>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="6Hg-rh-04s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="28" id="Dlv-yE-MxC"/>
+                    <constraint firstItem="6Hg-rh-04s" firstAttribute="leading" secondItem="W0S-02-eqy" secondAttribute="trailing" constant="20" id="Gu7-d6-g9T"/>
+                    <constraint firstAttribute="trailing" secondItem="6Hg-rh-04s" secondAttribute="trailing" constant="20" id="NKY-of-qf2"/>
+                    <constraint firstItem="ern-2j-KZp" firstAttribute="top" secondItem="W0S-02-eqy" secondAttribute="bottom" constant="10" id="SmA-xY-20T"/>
+                    <constraint firstAttribute="trailing" secondItem="ern-2j-KZp" secondAttribute="trailing" constant="20" id="VGY-ez-2rw"/>
+                    <constraint firstItem="yMb-Ei-D7n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="VVm-Xs-waT"/>
+                    <constraint firstItem="W0S-02-eqy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="28" id="ZL0-rJ-aFP"/>
+                    <constraint firstAttribute="bottom" secondItem="ern-2j-KZp" secondAttribute="bottom" constant="10" id="eAz-YX-6xT"/>
+                    <constraint firstItem="ern-2j-KZp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="opO-gI-w8a"/>
+                    <constraint firstItem="yMb-Ei-D7n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14.67" id="uJY-wR-7lz"/>
+                    <constraint firstItem="W0S-02-eqy" firstAttribute="leading" secondItem="yMb-Ei-D7n" secondAttribute="trailing" constant="10" id="zRr-fF-R8C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="datePicker" destination="ern-2j-KZp" id="luZ-vI-s7g"/>
+                <outlet property="selectedDateLbl" destination="6Hg-rh-04s" id="ziu-6d-Gjd"/>
+            </connections>
+            <point key="canvasLocation" x="-31" y="-13"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
